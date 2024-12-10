@@ -27,7 +27,7 @@ export const useGetPostBySearch
   export const useGetPostBySorting
  = ()=>{
     const {data} = useQuery({
-      queryKey:["SearchedPost"],
+      queryKey:["PostBySorting"],
       queryFn:async()=>{
           const response = await getPostBySorting()
           return response.data
